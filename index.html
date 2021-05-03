@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+       
+        <div class="main-content">
+            <div class="heading"><h1 >Bus Ticketing</h1></div>
+            <div class="main" id="form">
+                <div class="col username">
+                    <label>Fullname</label>
+                    <input type="text" id="fname">
+                    <small class=" hidden">Field is Empty</small>
+                </div>
+                <div class="col ">
+                    <label for="trip">Trip</label>
+                    <div class="trip-select" id="trip" grouped>
+                        <input type="radio" name="trip" id="one-trip"><span> 1 way Trip</span>
+                        <input type="radio" name="trip" id="round-trip"><span>Round Trip</span>
+                    </div>
+                <small class=" hidden">Field is Empty</small>
+                </div>
+                <div class="col datebook">
+                    <label for="">Date of Trip</label>
+                    <input type="date" id="date">
+                    <small class=" hidden">Field is Empty</small>
+                </div>
+                <div class="col attend">
+                    <label for="">Number of People</label>
+                    <input type="number" min="1" contentEditable="true" id="num-people">
+                    <small class=" hidden">Field is Empty</small>
+                </div>
+                <div class="comments">
+                    <label for="">Send a Feedback</label>
+                    <textarea name="" id="feedback" cols="30" rows="10"></textarea>
+                    <button>Submit</button>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

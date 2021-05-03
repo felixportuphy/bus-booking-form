@@ -1,0 +1,184 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Open Sans',sans-serif;
+}
+
+
+.container{
+    position: relative;
+    width:100vw;
+    height:100vh;
+}
+
+
+
+.main-content{
+    /* border:2px solid red; */
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius:8px;
+    box-shadow:0px 0px 30px 0.3px rgba(0,0,0,0.2);
+    padding:1rem 2rem;
+    text-align: center;
+}
+
+.heading{
+    border-bottom:2px solid black;
+    margin-bottom:10px;
+    
+}
+
+.main{
+   
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    column-gap:2rem;
+    
+}
+
+.main .col{
+    position: relative;
+    margin-bottom:10px;
+}
+
+
+label{
+    display:inline-block;
+    margin:10px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+ .col input:not(input[type="radio"]){
+     display:block;
+     border:2px solid black;
+     width:100%;
+     padding:10px;
+     font-size:18px;
+ }
+
+ .col input[type="number"]{
+     text-align: center;
+     font-weight:bold;
+   
+ }
+
+ 
+ .col input[type="radio"]{
+    width:15px;
+    height:15px;
+    margin-right:10px;
+    font-weight:bold;
+}
+
+.trip-select span{
+    font-size:16px;
+    font-weight:bold;
+}
+/* small{
+    padding:5px 0;
+} */
+
+.errorMessage{
+  
+    color:red;
+    font-size:16px;
+    transition:0.3s ease-out;
+}
+
+ 
+
+
+
+
+.comments{
+   grid-column:1/3;
+   width:100%;
+
+}
+
+.comments textarea{
+    border:2px solid black;
+    width:inherit;
+    height:200px;
+    padding:20px;
+    color:black;
+    font-size:18px;
+
+
+}
+
+
+
+button{
+    background-color:red;
+    text-transform: uppercase;
+    cursor:pointer;
+    color:white;
+    font-size:20px;
+    padding:15px;
+    border:none;
+    border-radius:8px;
+    width:30%;
+}
+
+.visible{
+    visibility:visible;
+ 
+}
+
+.hidden{
+    visibility:hidden;
+
+}
+
+
+@media screen and (max-width:930px){
+
+    
+.main-content{
+    /* border:2px solid red; */
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-30%);
+    border-radius:8px;
+    box-shadow:0px 0px 30px 0.3px rgba(0,0,0,0.2);
+    padding:1rem 2rem;
+    text-align: center;
+}
+   
+.main{
+   
+    grid-template-columns:1fr;
+  
+    
+}
+
+.comments{
+    grid-column:1;
+    width:100%;
+ 
+ }
+
+}
+
+
+
+@media screen and (max-width:830px){
+   
+    
+
+button{
+  
+    font-size:20px;
+    padding:5px;
+    border:none;
+    border-radius:8px;
+    width:100%;
+}
+}
